@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" />
+    <title>Finance Page</title>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--custom CSS-->
+    <link rel="stylesheet" href="prueba.css">
+
+</head>
+  <body class="body">
+    <header class="container">
+        <div class="navbar">
+            <h2 class="logo" href="" >Finance</h2>
+    <nav>
+        <ul id="menulist">
+            <li><a class="main-nav__item" href="#">Home</a></li>
+            <li><a class="main-nav__item" href="./paginas/about.html">About</a></li>
+            <li><a class="main-nav__item" href="./paginas/features.html">Features</a></li>
+            <li><a class="main-nav__item" href="./paginas/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <a class="menu-icon" > <i class="fa-solid fa-align-justify" onclick="togglemenu()"></i> </a>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Pay, invest and keep your future safe with <span>Finance</span> </h2>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quo explicabo, dolorem quidem perferendis repellendus nobis! Unde, molestias. Recusandae, quibusdam!</h3>
+                <a class="col-info__buttom"> Start Now <span></span> </a>
+                <p> <span>+5M</span> Users around the globe </p>
+            </div>
+            <div class="col-2">
+                <img src="./img/Bitcoin-Logo.png" alt="Bitcoin logo" class="bitcoin">
+            </div>
+        </div>
+        <div class="social-links">
+            <h2>Contact Us</h2>
+            <a href="https://twitter.com/" target="https://twitter.com/" alt="Twitter" ><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="https://www.instagram.com/" alt="Instagram" ><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="https://www.youtube.com/" alt="Youtube" ><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+    <script>
+        var menulist = document.getElementById("menulist")
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu () {
+
+         if(menulist.style.maxHeight == "0px" )
+            {
+                menulist.style.maxHeight = "130px";
+            }
+         else 
+            {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <footer class="footer">
+        <p>2022 Derechos reservados Guzyan Dev</p>
+    </footer>
+    <!-- Scroll Reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+  </body>
+</html>
